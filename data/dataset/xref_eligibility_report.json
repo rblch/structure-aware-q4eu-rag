@@ -1,0 +1,47 @@
+{
+  "stage": "1c-ii",
+  "structural_upper_bound_count": 54,
+  "structural_upper_bound_by_specificity": {
+    "H": 12,
+    "L": 20,
+    "N": 22
+  },
+  "structural_upper_bound_by_act": {
+    "B": 8,
+    "E": 13,
+    "G": 13,
+    "RI": 6,
+    "RII": 3,
+    "W": 13
+  },
+  "retrieval_conditioned_count": 10,
+  "retrieval_conditioned_by_specificity": {
+    "H": 2,
+    "L": 2,
+    "N": 6
+  },
+  "retrieval_conditioned_by_act": {
+    "E": 2,
+    "G": 5,
+    "RI": 1,
+    "W": 2
+  },
+  "xref_power_decision": "xref_contrasts_exploratory_underpowered",
+  "gold_multi_unit_count": 62,
+  "gold_has_incoming_xref_count": 62,
+  "xref_edge_count": 1439,
+  "retrieval_conditioned_base_config_id": "hier_paragraph",
+  "retrieval_conditioned_top_k": 5,
+  "retrieval_conditioned_query_ids": [
+    "q4eu_001",
+    "q4eu_014",
+    "q4eu_020",
+    "q4eu_028",
+    "q4eu_029",
+    "q4eu_031",
+    "q4eu_032",
+    "q4eu_044",
+    "q4eu_053",
+    "q4eu_064"
+  ]
+}

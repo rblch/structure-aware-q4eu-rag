@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "faithfulness_score",
+    "answer_abstains",
+    "abstention_justified",
+    "abstention_reason",
+    "unfaithful_claims",
+    "supporting_evidence",
+    "rationale"
+  ],
+  "properties": {
+    "faithfulness_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "multipleOf": 0.1
+    },
+    "answer_abstains": {
+      "type": "boolean"
+    },
+    "abstention_justified": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "abstention_reason": {
+      "type": "string"
+    },
+    "unfaithful_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supporting_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rationale": {
+      "type": "string"
+    }
+  },
+  "if": {
+    "properties": {
+      "answer_abstains": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "abstention_justified": {
+        "type": "boolean"
+      }
+    }
+  },
+  "additionalProperties": false
+}

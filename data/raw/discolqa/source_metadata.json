@@ -1,0 +1,77 @@
+{
+  "source_repo": "Francesco-Sovrano/DiscoLQA",
+  "source_branch": "main",
+  "source_commit": "f8614b7d75d4054fb6b02119cde92492172fd6b6",
+  "import_timestamp_utc": "2026-06-04T15:15:35+00:00",
+  "files": [
+    {
+      "logical_name": "evaluate.py",
+      "repo_path": "[Law_EU]qa_overview/oke/evaluate.py",
+      "local_path": "data/raw/discolqa/evaluate.py",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/evaluate.py",
+      "bytes": 23561,
+      "sha256": "7b68d555c24bd8116c3ea93394d812b4f51aa5785dac37a61c0eaf461bf55b06"
+    },
+    {
+      "logical_name": "B",
+      "repo_path": "[Law_EU]qa_overview/oke/documents/bruss.akn",
+      "local_path": "data/raw/discolqa/documents/bruss.akn",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/documents/bruss.akn",
+      "bytes": 201718,
+      "sha256": "f026a41c692b88aabd0b22480943362bfa256d38c44bd4b3ef0e047f727fe82f"
+    },
+    {
+      "logical_name": "RI",
+      "repo_path": "[Law_EU]qa_overview/oke/documents/rome_i.akn",
+      "local_path": "data/raw/discolqa/documents/rome_i.akn",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/documents/rome_i.akn",
+      "bytes": 95689,
+      "sha256": "bc987f70e14ccf89543a14f3d6b228a38cf410c4ac07af0360d620d6ba993caa"
+    },
+    {
+      "logical_name": "RII",
+      "repo_path": "[Law_EU]qa_overview/oke/documents/rome_ii.akn",
+      "local_path": "data/raw/discolqa/documents/rome_ii.akn",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/documents/rome_ii.akn",
+      "bytes": 73987,
+      "sha256": "098044447b11777253f61ffe2e80b62af67a9044fb10505ceac01a674e82eb58"
+    },
+    {
+      "logical_name": "G",
+      "repo_path": "[Law_EU]qa_overview/oke/documents/gdpr.akn",
+      "local_path": "data/raw/discolqa/documents/gdpr.akn",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/documents/gdpr.akn",
+      "bytes": 680673,
+      "sha256": "42156653cec9a6c562b6d8a65ab80e85d8c63e4deb07e332bb12d664637aa7ba"
+    },
+    {
+      "logical_name": "E",
+      "repo_path": "[Law_EU]qa_overview/oke/documents/eidas.akn",
+      "local_path": "data/raw/discolqa/documents/eidas.akn",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/documents/eidas.akn",
+      "bytes": 290391,
+      "sha256": "8b6a1114906ce6c06c9f9fb9181603ea4b4e2299c9a451713b74571c3eb34de1"
+    },
+    {
+      "logical_name": "W",
+      "repo_path": "[Law_EU]qa_overview/oke/documents/warrant.html",
+      "local_path": "data/raw/discolqa/documents/warrant.html",
+      "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/%5BLaw_EU%5Dqa_overview/oke/documents/warrant.html",
+      "bytes": 86851,
+      "sha256": "15cc5f5fe6326065282cbd67947f6391b963109b05066c07087ee505e9235d7d"
+    }
+  ],
+  "license": {
+    "status": "fetched",
+    "repo_path": "LICENSE",
+    "local_path": "data/raw/discolqa/LICENSE",
+    "url": "https://raw.githubusercontent.com/Francesco-Sovrano/DiscoLQA/f8614b7d75d4054fb6b02119cde92492172fd6b6/LICENSE",
+    "bytes": 1074,
+    "sha256": "62dfed8a4db326a34d4973e2780543a24a7ced906f94c10acc78625206ee99ae"
+  },
+  "excluded_upstream_assets": [
+    "large DiscoLQA model files",
+    "derived caches",
+    "runtime outputs"
+  ]
+}

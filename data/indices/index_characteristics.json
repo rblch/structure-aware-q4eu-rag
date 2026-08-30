@@ -1,0 +1,148 @@
+{
+  "index_type": "IndexFlatIP",
+  "configs": {
+    "fs_128_25": {
+      "config_id": "fs_128_25",
+      "chunk_file": "data/chunks/fixed_size/fs_128_25.json",
+      "chunk_count": 1148,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "d6fba792883c52723746034b96591a974d8a333a218c15b189d7f5d6d46d2c2d",
+      "index_path": "data/indices/fs_128_25/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "fs_256_50": {
+      "config_id": "fs_256_50",
+      "chunk_file": "data/chunks/fixed_size/fs_256_50.json",
+      "chunk_count": 576,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "9990cab675d9b65a13f0b4e1fdac12ce344ef38c895ac409264bf196a9d144ef",
+      "index_path": "data/indices/fs_256_50/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "fs_64_12": {
+      "config_id": "fs_64_12",
+      "chunk_file": "data/chunks/fixed_size/fs_64_12.json",
+      "chunk_count": 2273,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "c228a6f3e3a785540cfb8c372b98004ca44a1b27a09c2d0da6b4746adcbc8fb4",
+      "index_path": "data/indices/fs_64_12/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "hier_article": {
+      "config_id": "hier_article",
+      "chunk_file": "data/chunks/hierarchical/hier_article.json",
+      "chunk_count": 720,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "e8c77b286420839858ad8f05ce20d86298090b8409fe3774b214cf7d30579354",
+      "index_path": "data/indices/hier_article/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "hier_paragraph": {
+      "config_id": "hier_paragraph",
+      "chunk_file": "data/chunks/hierarchical/hier_paragraph.json",
+      "chunk_count": 1372,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "218dcf07c453ccdec2b2900c6e7666e4d493bfe2f67550fe395ed7154ab57a6e",
+      "index_path": "data/indices/hier_paragraph/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "hier_paragraph_contextualized": {
+      "config_id": "hier_paragraph_contextualized",
+      "chunk_file": "data/chunks/hierarchical/hier_paragraph_contextualized.json",
+      "chunk_count": 1372,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "369fe845c264666061cacd71e88f5d6db9eb5c7b5f8206657e6cbb2f8fb32046",
+      "index_path": "data/indices/hier_paragraph_contextualized/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "hier_subparagraph": {
+      "config_id": "hier_subparagraph",
+      "chunk_file": "data/chunks/hierarchical/hier_subparagraph.json",
+      "chunk_count": 1774,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "dda6c965a9cd391f9009f6dcba260d41eb977a7c6ae1b84cd85e2f09b23212ad",
+      "index_path": "data/indices/hier_subparagraph/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "sem_50_128": {
+      "config_id": "sem_50_128",
+      "chunk_file": "data/chunks/semantic/sem_50_128.json",
+      "chunk_count": 1555,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "a61b0af4d9f75bff2b3ba07f9bce4fbc01aee24b3473052fdc350659290432ef",
+      "index_path": "data/indices/sem_50_128/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "sem_50_256": {
+      "config_id": "sem_50_256",
+      "chunk_file": "data/chunks/semantic/sem_50_256.json",
+      "chunk_count": 1127,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "250c9e0878a9b1a5dd1f61713bcb6cf590c220c90ff06a3c91c684a5836d62df",
+      "index_path": "data/indices/sem_50_256/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "sem_50_64": {
+      "config_id": "sem_50_64",
+      "chunk_file": "data/chunks/semantic/sem_50_64.json",
+      "chunk_count": 2527,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "60fe33a061bc844d53583d51658b8293055259e09d58e06e432011d6ad36fe3c",
+      "index_path": "data/indices/sem_50_64/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "sem_70_128": {
+      "config_id": "sem_70_128",
+      "chunk_file": "data/chunks/semantic/sem_70_128.json",
+      "chunk_count": 1610,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "afe4ccb4b15edf3e8def7a53928d580c33fdd551b751e0f615bdf5c2fbbb8ffd",
+      "index_path": "data/indices/sem_70_128/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "sem_70_256": {
+      "config_id": "sem_70_256",
+      "chunk_file": "data/chunks/semantic/sem_70_256.json",
+      "chunk_count": 1310,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "a3fa69e29300a52d50bf470994895a7be06e4b35eaf96cceaadd255239589d4e",
+      "index_path": "data/indices/sem_70_256/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    },
+    "sem_70_64": {
+      "config_id": "sem_70_64",
+      "chunk_file": "data/chunks/semantic/sem_70_64.json",
+      "chunk_count": 2530,
+      "dimensions": 1536,
+      "embedding_model": "openai/text-embedding-3-small",
+      "chunk_file_sha256": "1700b1773efac4c2d9d76c10277537a89876baad0e35600ce4055b8daa4fdb7d",
+      "index_path": "data/indices/sem_70_64/index.faiss",
+      "norm_min": 0.9999998807907104,
+      "norm_max": 1.0000001192092896
+    }
+  }
+}

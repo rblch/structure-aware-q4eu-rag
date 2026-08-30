@@ -1,0 +1,14 @@
+{
+  "config_id": "fs_128_25",
+  "strategy": "fixed_size",
+  "chunk_count": 1148,
+  "chunk_file": "data/chunks/fixed_size/fs_128_25.json",
+  "chunk_file_sha256": "d6fba792883c52723746034b96591a974d8a333a218c15b189d7f5d6d46d2c2d",
+  "embedding_text_field": "text",
+  "embedding_provider": "openrouter",
+  "embedding_model": "openai/text-embedding-3-small",
+  "configured_dimensions": 1536,
+  "actual_dimensions": 1536,
+  "embeddings_sha256": "84bee84b760d44ed40fea360aafa143e24ee4390e8731b554ed62de6ace75d2d",
+  "chunk_id_order_sha256": "b6b43127517dcdd47ec293e5e79e5eee601bcffd0c9f0696ea91237edbd474a0"
+}

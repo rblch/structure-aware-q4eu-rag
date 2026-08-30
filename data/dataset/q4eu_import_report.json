@@ -1,0 +1,51 @@
+{
+  "dataset": "Q4EU",
+  "source_repo": "Francesco-Sovrano/DiscoLQA",
+  "source_branch": "main",
+  "source_commit": "f8614b7d75d4054fb6b02119cde92492172fd6b6",
+  "imported_question_count": 72,
+  "raw_expected_answer_count": 246,
+  "paper_expected_answer_count": 225,
+  "repo_expected_answer_count": 246,
+  "paper_repo_divergence": "The DiscoLQA paper reports 225 expected answers; the pinned repository contains 246 raw expected answers including the appended update block.",
+  "specificity_counts": {
+    "H": 22,
+    "L": 22,
+    "N": 28
+  },
+  "specificity_definitions": {
+    "H": "the answer falls precisely in the domain of the regulation and is given in the \"black letter\" of an exact provision",
+    "N": "the answer falls within scope but requires abstracting across multiple provisions",
+    "L": "a broad question whose tentative answer is found only through an articulate combination of articles and recitals, partly open to interpretation"
+  },
+  "target_document_tag_counts": {
+    "B": 10,
+    "E": 17,
+    "G": 17,
+    "RI": 7,
+    "RII": 3,
+    "W": 21
+  },
+  "multi_act_question_count": 2,
+  "gold_unit_count_distribution": {
+    "1": 10,
+    "2": 22,
+    "3": 13,
+    "4": 14,
+    "5": 7,
+    "6": 4,
+    "8": 1,
+    "22": 1
+  },
+  "questions_with_single_gold_unit": 10,
+  "questions_with_multiple_gold_units": 62,
+  "stage_1b_sanity_check": {
+    "status": "passed",
+    "normalization_rule": "Article and Recital labels are converted to Art./Rec.; article paragraph and point suffixes are dropped at the first numeric dot for primary article/recital-level gold evaluation.",
+    "checked_examples": {
+      "G Art. 35.3": "G Art. 35",
+      "E Rec. 57": "E Rec. 57",
+      "W Art. 4a": "W Art. 4a"
+    }
+  }
+}

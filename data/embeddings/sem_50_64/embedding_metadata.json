@@ -1,0 +1,14 @@
+{
+  "config_id": "sem_50_64",
+  "strategy": "semantic",
+  "chunk_count": 2527,
+  "chunk_file": "data/chunks/semantic/sem_50_64.json",
+  "chunk_file_sha256": "60fe33a061bc844d53583d51658b8293055259e09d58e06e432011d6ad36fe3c",
+  "embedding_text_field": "text",
+  "embedding_provider": "openrouter",
+  "embedding_model": "openai/text-embedding-3-small",
+  "configured_dimensions": 1536,
+  "actual_dimensions": 1536,
+  "embeddings_sha256": "edd4e4b414d127297956b1f5dbc103c447cf36e1c8002616a8829519dc62003d",
+  "chunk_id_order_sha256": "c725dd45a9c2aaf5bd4b694373c1e66bf3d5d2a51fa98cd68ebab22c2ccc51d7"
+}

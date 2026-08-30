@@ -1,0 +1,181 @@
+{
+  "output_dir": "data/results",
+  "retrieval": {
+    "rq1_confirmatory_config_ids": [
+      "fs_256_50",
+      "sem_50_256",
+      "hier_paragraph"
+    ],
+    "rq1_confirmatory_scope": "all_acts",
+    "rq1_confirmatory_top_k": 10,
+    "rq1_confirmatory_metric": "f1",
+    "best_target_acts_f1_at_10": {
+      "config_id": "hier_paragraph_contextualized",
+      "primary_metric": "f1",
+      "f1": 0.3840762632429299,
+      "precision": 0.2935185185185185,
+      "recall": 0.7029250841750841,
+      "ndcg": 0.6963090170344727,
+      "mrr": 0.8576388888888888
+    },
+    "best_target_acts_recall_at_10": {
+      "config_id": "fs_256_50",
+      "recall": 0.7491372053872054,
+      "precision": 0.12107197551207416,
+      "f1": 0.19699073706695144,
+      "ndcg": 0.5382931437609554,
+      "mrr": 0.5992779982363315
+    },
+    "target_acts_top_10_config_count": 13
+  },
+  "generation": {
+    "best_faithfulness_condition": {
+      "condition_id": "parent_only",
+      "faithfulness_mean": 0.9597222222222221,
+      "correctness_mean": 0.8083333333333333,
+      "note": "ungated best-faithfulness; see rq2_anti_gaming_gate"
+    },
+    "rq2_anti_gaming_gate": {
+      "registered_rule": "a contrast is interpreted as better only if faithfulness and correctness mean deltas are both > 0 and the unjustified-abstention rate (an abstention flagged unjustified by either judge) increases by at most the registered tolerance",
+      "contrasts": [
+        {
+          "rq": "RQ2",
+          "contrast": "combined - no_enrichment",
+          "faithfulness_mean_delta": 0.03888888888888886,
+          "correctness_mean_delta": 0.08750000000000002,
+          "either_judge_unjustified_abstention_rate_delta": -0.05555555555555555,
+          "max_unjustified_abstention_increase": 0.1,
+          "faithfulness_improves": true,
+          "correctness_improves": true,
+          "either_judge_unjustified_abstention_within_tolerance": true,
+          "interpretation_gate_passed": true
+        },
+        {
+          "rq": "RQ2",
+          "contrast": "parent_only - no_enrichment",
+          "faithfulness_mean_delta": 0.03888888888888886,
+          "correctness_mean_delta": 0.0805555555555556,
+          "either_judge_unjustified_abstention_rate_delta": -0.041666666666666664,
+          "max_unjustified_abstention_increase": 0.1,
+          "faithfulness_improves": true,
+          "correctness_improves": true,
+          "either_judge_unjustified_abstention_within_tolerance": true,
+          "interpretation_gate_passed": true
+        },
+        {
+          "rq": "RQ2",
+          "contrast": "combined - parent_only",
+          "faithfulness_mean_delta": 0.0,
+          "correctness_mean_delta": 0.00694444444444442,
+          "either_judge_unjustified_abstention_rate_delta": -0.013888888888888888,
+          "max_unjustified_abstention_increase": 0.1,
+          "faithfulness_improves": false,
+          "correctness_improves": true,
+          "either_judge_unjustified_abstention_within_tolerance": true,
+          "interpretation_gate_passed": false
+        }
+      ],
+      "gate_passed_contrasts": [
+        "combined - no_enrichment",
+        "parent_only - no_enrichment"
+      ]
+    },
+    "zero_correctness_case_count": 24
+  },
+  "inferential": {
+    "rq1_omnibus": {
+      "rq": "RQ1",
+      "outcome": "gold_f1_at_10",
+      "family": "confirmatory_chunking",
+      "comparison": "fs_256_50 vs sem_50_256 vs hier_paragraph",
+      "test": "scipy_friedman_chi_square",
+      "method": "scipy.stats.friedmanchisquare",
+      "n": 72,
+      "effective_n": 72,
+      "statistic": 62.69343065693423,
+      "p_value": 2.433853912988312e-14,
+      "p_value_adjusted_holm": "",
+      "kendalls_w": 0.4353710462287099,
+      "rank_biserial": "",
+      "mean_difference": "",
+      "median_difference": "",
+      "ci_lower": "",
+      "ci_upper": "",
+      "notes": "descriptive omnibus summary; not a gate for the contrast family"
+    },
+    "rq2_faithfulness_omnibus": {
+      "rq": "RQ2",
+      "outcome": "faithfulness_score",
+      "family": "enrichment_family",
+      "comparison": "no_enrichment vs parent_only vs xref_only vs combined",
+      "test": "scipy_friedman_chi_square",
+      "method": "scipy.stats.friedmanchisquare",
+      "n": 72,
+      "effective_n": 72,
+      "statistic": 4.0452961672472725,
+      "p_value": 0.25661432019798186,
+      "p_value_adjusted_holm": "",
+      "kendalls_w": 0.01872822299651515,
+      "rank_biserial": "",
+      "mean_difference": "",
+      "median_difference": "",
+      "ci_lower": "",
+      "ci_upper": "",
+      "notes": "descriptive omnibus summary; not a gate for the contrast family"
+    }
+  },
+  "context_coverage": {
+    "no_enrichment": {
+      "context_gold_recall": 0.5903198653198652,
+      "context_token_median": 544.5
+    },
+    "parent_only": {
+      "context_gold_recall": 0.5903198653198652,
+      "context_token_median": 1423.0
+    },
+    "xref_only": {
+      "context_gold_recall": 0.6088383838383838,
+      "context_token_median": 803.0
+    },
+    "combined": {
+      "context_gold_recall": 0.6088383838383838,
+      "context_token_median": 1578.5
+    },
+    "volume_matched": {
+      "context_gold_recall": 0.6936026936026936,
+      "context_token_median": 1608.5
+    }
+  },
+  "efficiency": {
+    "no_enrichment": {
+      "generation_total_cost_usd": 0.13398651,
+      "total_judge_cost_usd": 1.055189,
+      "generation_total_elapsed_seconds": 802.0601851269676,
+      "total_judge_elapsed_seconds": 653.3138037069511
+    },
+    "parent_only": {
+      "generation_total_cost_usd": 0.13883831,
+      "total_judge_cost_usd": 1.0780925,
+      "generation_total_elapsed_seconds": 844.0568001270221,
+      "total_judge_elapsed_seconds": 623.0402710039853
+    },
+    "xref_only": {
+      "generation_total_cost_usd": 0.14163023,
+      "total_judge_cost_usd": 1.1171725,
+      "generation_total_elapsed_seconds": 692.4973402919932,
+      "total_judge_elapsed_seconds": 667.4570388329666
+    },
+    "combined": {
+      "generation_total_cost_usd": 0.159426,
+      "total_judge_cost_usd": 1.142834,
+      "generation_total_elapsed_seconds": 800.9889323790048,
+      "total_judge_elapsed_seconds": 655.663787547026
+    },
+    "volume_matched": {
+      "generation_total_cost_usd": 0.16443917,
+      "total_judge_cost_usd": 1.1661105,
+      "generation_total_elapsed_seconds": 831.1569482869963,
+      "total_judge_elapsed_seconds": 670.886738917965
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "config_id": "hier_article",
+  "strategy": "hierarchical",
+  "chunk_count": 720,
+  "chunk_file": "data/chunks/hierarchical/hier_article.json",
+  "chunk_file_sha256": "e8c77b286420839858ad8f05ce20d86298090b8409fe3774b214cf7d30579354",
+  "embedding_text_field": "text",
+  "embedding_provider": "openrouter",
+  "embedding_model": "openai/text-embedding-3-small",
+  "configured_dimensions": 1536,
+  "actual_dimensions": 1536,
+  "embeddings_sha256": "7a0f4af6e09e435236e1636024dbbced283d6f305c4171082e2493ebf7616051",
+  "chunk_id_order_sha256": "47d81eb607f334e3ef7bfeaa37eef4824dfe0a189f3f907556f81b0bc380ca30"
+}

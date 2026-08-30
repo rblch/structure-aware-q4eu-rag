@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "query_id",
+    "question",
+    "specificity",
+    "target_document_codes",
+    "expected_answers_raw",
+    "gold_unit_ids",
+    "is_multi_act",
+    "gold_unit_count",
+    "xref_eligible",
+    "source"
+  ],
+  "properties": {
+    "query_id": { "type": "string" },
+    "question": { "type": "string", "minLength": 1 },
+    "specificity": { "enum": ["H", "N", "L"] },
+    "target_document_codes": {
+      "type": "array",
+      "items": { "enum": ["B", "RI", "RII", "G", "E", "W"] },
+      "minItems": 1
+    },
+    "expected_answers_raw": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "gold_unit_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "gold_unit_ids_paragraph_level": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "is_multi_act": { "type": "boolean" },
+    "gold_unit_count": { "type": "integer", "minimum": 1 },
+    "gold_multi_unit": { "type": "boolean" },
+    "gold_has_incoming_xref": { "type": "boolean" },
+    "xref_eligible": { "type": "boolean" },
+    "source": {
+      "type": "object",
+      "required": ["dataset", "repo", "commit"],
+      "properties": {
+        "dataset": { "const": "Q4EU" },
+        "repo": { "type": "string" },
+        "commit": { "type": "string" }
+      }
+    }
+  }
+}
+

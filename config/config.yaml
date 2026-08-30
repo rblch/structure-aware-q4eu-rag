@@ -1,0 +1,182 @@
+random_seed: 42
+
+dataset:
+  source_repo: "Francesco-Sovrano/DiscoLQA"
+  source_branch: "main"
+  source_commit: "f8614b7d75d4054fb6b02119cde92492172fd6b6"
+  use_vendored_snapshot: false
+  primary_gold_granularity: "article_recital"
+  include_paragraph_diagnostics: true
+
+corpus:
+  document_codes: ["B", "RI", "RII", "G", "E", "W"]
+  parser_backend:
+    akn: "xml"
+    warrant: "html"
+  xref_extraction:
+    backend: "canonical_text_patterns"
+    scope: "intra_document_only"
+    target_granularity_for_eligibility: "article_recital"
+
+retrieval:
+  top_k_values: [5, 10]
+  primary_top_k: 10
+  index_type: "IndexFlatIP"
+  search_scopes:
+    - id: "all_acts"
+      restrict_to_target_documents: false
+    - id: "target_acts"
+      restrict_to_target_documents: true
+    - id: "pil_acts"
+      restrict_to_document_codes: ["B", "RI", "RII"]
+      only_queries_targeting_restriction: true
+
+chunking:
+  fixed_size:
+    boundary_mode: "raw_token_windows"
+    overlap_unit: "tokens"
+    configs:
+      - id: "fs_64_12"
+        confirmatory: false
+        chunk_size: 64
+        chunk_overlap: 12
+      - id: "fs_128_25"
+        confirmatory: false
+        chunk_size: 128
+        chunk_overlap: 25
+      - id: "fs_256_50"
+        confirmatory: true
+        chunk_size: 256
+        chunk_overlap: 50
+  semantic:
+    configs:
+      - id: "sem_50_64"
+        confirmatory: false
+        breakpoint_percentile: 50
+        max_chunk_size: 64
+      - id: "sem_50_128"
+        confirmatory: false
+        breakpoint_percentile: 50
+        max_chunk_size: 128
+      - id: "sem_50_256"
+        confirmatory: true
+        breakpoint_percentile: 50
+        max_chunk_size: 256
+      - id: "sem_70_64"
+        confirmatory: false
+        breakpoint_percentile: 70
+        max_chunk_size: 64
+      - id: "sem_70_128"
+        confirmatory: false
+        breakpoint_percentile: 70
+        max_chunk_size: 128
+      - id: "sem_70_256"
+        confirmatory: false
+        breakpoint_percentile: 70
+        max_chunk_size: 256
+    min_chunk_size: 32
+    window_size: 3
+  hierarchical:
+    configs:
+      - id: "hier_article"
+        confirmatory: false
+        leaf_level: "article_or_recital"
+      - id: "hier_paragraph"
+        confirmatory: true
+        leaf_level: "paragraph_or_recital"
+      - id: "hier_paragraph_contextualized"
+        confirmatory: false
+        leaf_level: "paragraph_or_recital"
+        embedding_context: "structural_breadcrumb"
+      - id: "hier_subparagraph"
+        confirmatory: false
+        leaf_level: "subparagraph_or_recital"
+
+enrichment:
+  base_config_id: "hier_paragraph"
+  top_k: 5
+  conditions:
+    - id: "no_enrichment"
+      parent: false
+      xref: false
+      volume_matched: false
+    - id: "parent_only"
+      parent: true
+      xref: false
+      volume_matched: false
+    - id: "xref_only"
+      parent: false
+      xref: true
+      volume_matched: false
+    - id: "combined"
+      parent: true
+      xref: true
+      volume_matched: false
+    - id: "volume_matched"
+      parent: false
+      xref: false
+      volume_matched: true
+  context_budget_tokens: 3500
+  volume_match_extended_k: 50
+  # Maximum relative error for volume-matched contexts.
+  volume_match_tolerance: 0.15
+
+rq3_cross_chunking:
+  search_scope: "all_acts"
+  top_k: 5
+  context_budget_tokens: 3500
+  expected_query_count: 72
+  new_conditions:
+    - id: "rq3_fixed_size"
+      config_id: "fs_256_50"
+      strategy: "fixed_size"
+    - id: "rq3_semantic"
+      config_id: "sem_50_256"
+      strategy: "semantic"
+  hierarchical_reference:
+    condition_id: "no_enrichment"
+    config_id: "hier_paragraph"
+    strategy: "hierarchical"
+
+models:
+  gateway:
+    provider: "openrouter"
+    base_url: "https://openrouter.ai/api/v1"
+    api_key_env: "OPENROUTER_API_KEY"
+    http_referer_env: "OPENROUTER_HTTP_REFERER"
+    title_env: "OPENROUTER_APP_TITLE"
+  embedding:
+    provider: "openrouter"
+    model: "openai/text-embedding-3-small"
+    dimensions: 1536
+    batch_size: 100
+  generation:
+    provider: "openrouter"
+    model: "openai/gpt-5-mini"
+    api: "chat_completions"
+    temperature: 0.0
+    max_tokens: 4096
+    context_window_tokens: 128000
+  evaluation:
+    faithfulness:
+      provider: "openrouter"
+      model: "anthropic/claude-haiku-4.5"
+      api: "chat_completions"
+      temperature: 0.0
+      max_tokens: 4096
+    correctness:
+      provider: "openrouter"
+      model: "google/gemini-3.5-flash"
+      api: "chat_completions"
+      temperature: null
+      max_tokens: 4096
+
+analysis:
+  bootstrap_iterations: 10000
+  bootstrap_ci: 0.95
+  manual_audit_fraction: 0.10
+  unfaithful_threshold: 0.5
+  enable_usefulness_judge: false
+  anti_gaming:
+    # Maximum unjustified-abstention increase under the RQ2 gate.
+    max_unjustified_abstention_increase: 0.10

@@ -1,0 +1,25 @@
+condition_id,query_id,question,faithfulness_score,correctness_score,context_gold_recall,answer_abstains,either_judge_unjustified_abstention,missing_gold_citation_unit_ids,extra_citation_unit_ids
+no_enrichment,q4eu_002,Can an electronic signature be expressed in the form of a pseudonym?,0.8,0.0,0.0,True,False,E Art. 3;E Art. 32,E Art. 25;E Art. 26;E Art. 5
+parent_only,q4eu_002,Can an electronic signature be expressed in the form of a pseudonym?,0.9,0.0,0.0,False,True,E Art. 3;E Art. 32,E Art. 25;E Art. 26;E Art. 5
+xref_only,q4eu_002,Can an electronic signature be expressed in the form of a pseudonym?,0.8,0.0,0.0,False,False,E Art. 3;E Art. 32,E Art. 25;E Art. 26;E Art. 5
+combined,q4eu_008,Do electronic contracts have the same validity as paper contracts?,0.8,0.0,0.0,False,False,E Art. 2;E Rec. 21,E Art. 25;E Rec. 59;E Rec. 63;E Rec. 65
+no_enrichment,q4eu_008,Do electronic contracts have the same validity as paper contracts?,0.9,0.0,0.0,False,False,E Art. 2;E Rec. 21,E Art. 25;E Rec. 59;E Rec. 63;E Rec. 65
+parent_only,q4eu_008,Do electronic contracts have the same validity as paper contracts?,0.8,0.0,0.0,False,False,E Art. 2;E Rec. 21,E Art. 25;E Rec. 59;E Rec. 63;E Rec. 65
+xref_only,q4eu_008,Do electronic contracts have the same validity as paper contracts?,0.8,0.0,0.0,False,False,E Art. 2;E Rec. 21,E Art. 25;E Rec. 59;E Rec. 63;E Rec. 65
+combined,q4eu_021,How should a data processor be appointed?,1.0,0.0,0.5,False,False,G Art. 26;G Art. 38,G Art. 29;G Rec. 81
+no_enrichment,q4eu_021,How should a data processor be appointed?,1.0,0.0,0.5,False,False,G Art. 26;G Art. 38,G Art. 29;G Rec. 81
+parent_only,q4eu_021,How should a data processor be appointed?,0.8,0.0,0.5,False,False,G Art. 26;G Art. 38,G Art. 29;G Rec. 81
+volume_matched,q4eu_021,How should a data processor be appointed?,1.0,0.0,0.5,False,False,G Art. 26;G Art. 38,G Art. 28;G Art. 29;G Art. 32;G Rec. 81
+xref_only,q4eu_021,How should a data processor be appointed?,0.9,0.0,0.5,False,False,G Art. 26;G Art. 38,G Art. 29;G Rec. 81
+combined,q4eu_034,Who determines disputes under a contract?,0.8,0.0,0.0,False,False,B Art. 17;B Art. 7;B Art. 8,B Art. 25;RI Rec. 12
+no_enrichment,q4eu_034,Who determines disputes under a contract?,0.8,0.0,0.0,False,False,B Art. 17;B Art. 7;B Art. 8,B Art. 25;RI Rec. 12
+parent_only,q4eu_034,Who determines disputes under a contract?,0.6,0.0,0.0,False,False,B Art. 17;B Art. 7;B Art. 8,B Art. 25;RI Rec. 12
+volume_matched,q4eu_034,Who determines disputes under a contract?,0.9,0.0,0.0,False,False,B Art. 17;B Art. 7;B Art. 8,B Art. 25;RI Rec. 12
+xref_only,q4eu_034,Who determines disputes under a contract?,0.8,0.0,0.0,False,False,B Art. 17;B Art. 7;B Art. 8,B Art. 25;RI Rec. 12
+no_enrichment,q4eu_048,Can the execution of the European arrest warrant be refused when the law of the executing Member State does not impose the same type of tax or duty or does not contain the same type of tax rules as the law of the issuing Member State?,1.0,0.0,0.3333333333333333,True,True,W Art. 2;W Rec. 6,W Art. 1;W Art. 3;W Art. 4a;W Art. 5
+xref_only,q4eu_048,Can the execution of the European arrest warrant be refused when the law of the executing Member State does not impose the same type of tax or duty or does not contain the same type of tax rules as the law of the issuing Member State?,1.0,0.0,0.3333333333333333,True,True,W Art. 2;W Rec. 6,W Art. 1;W Art. 3;W Art. 4a;W Art. 5
+no_enrichment,q4eu_053,Can the consent to the surrender of the arrested person be revoked?,1.0,0.0,1.0,True,True,,
+combined,q4eu_072,Does the GDPR provide a right to explanation?,0.9,0.0,0.0,False,False,G Art. 12;G Art. 15;G Rec. 71,G Rec. 39;G Rec. 59;G Rec. 60;G Rec. 63;G Rec. 65
+no_enrichment,q4eu_072,Does the GDPR provide a right to explanation?,0.9,0.0,0.0,True,True,G Art. 12;G Art. 15;G Rec. 71,G Rec. 39;G Rec. 59;G Rec. 60;G Rec. 63;G Rec. 65
+parent_only,q4eu_072,Does the GDPR provide a right to explanation?,0.9,0.0,0.0,False,False,G Art. 12;G Art. 15;G Rec. 71,G Rec. 39;G Rec. 59;G Rec. 60;G Rec. 63;G Rec. 65
+volume_matched,q4eu_072,Does the GDPR provide a right to explanation?,0.9,0.0,0.0,False,False,G Art. 12;G Art. 15;G Rec. 71,G Rec. 39;G Rec. 59;G Rec. 60;G Rec. 63

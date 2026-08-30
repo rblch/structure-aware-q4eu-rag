@@ -1,0 +1,244 @@
+{
+  "legal_unit_count": 2240,
+  "duplicate_unit_ids": [],
+  "counts_by_act": {
+    "B": {
+      "article": 81,
+      "chapter": 8,
+      "document": 1,
+      "paragraph": 163,
+      "recital": 41,
+      "subparagraph": 77
+    },
+    "E": {
+      "article": 52,
+      "chapter": 6,
+      "document": 1,
+      "paragraph": 160,
+      "recital": 77
+    },
+    "G": {
+      "article": 99,
+      "chapter": 11,
+      "document": 1,
+      "paragraph": 387,
+      "recital": 173,
+      "subparagraph": 378
+    },
+    "RI": {
+      "article": 29,
+      "chapter": 4,
+      "document": 1,
+      "paragraph": 70,
+      "recital": 46
+    },
+    "RII": {
+      "article": 32,
+      "chapter": 7,
+      "document": 1,
+      "paragraph": 60,
+      "recital": 40
+    },
+    "W": {
+      "article": 36,
+      "document": 1,
+      "paragraph": 141,
+      "recital": 14,
+      "subparagraph": 42
+    }
+  },
+  "warrant_spot_checks": {
+    "W Rec. 12": {
+      "exists": true,
+      "text_preview": "Recital 12. This Framework Decision respects fundamental rights and observes the principles recognised by Article 6 of the Treaty on European Union and reflected in the Charter of Fundamental Rights of the European Union ( 7 ), in particula"
+    },
+    "W Art. 4a": {
+      "exists": true,
+      "text_preview": "Article 4a. 1. The executing judicial authority may also refuse to execute the European arrest warrant issued for the purpose of executing a custodial sentence or a detention order if the person did not appear in person at the trial resulti"
+    },
+    "W Art. 30": {
+      "exists": true,
+      "text_preview": "Article 30. 1. Expenses incurred in the territory of the executing Member State for the execution of a European arrest warrant shall be borne by that Member State. 2. All other expenses shall be borne by the issuing Member State."
+    }
+  },
+  "units_missing_document_code": [],
+  "units_missing_legal_order": [],
+  "xref_edge_counts_by_act": {
+    "B": 163,
+    "E": 221,
+    "G": 880,
+    "RI": 70,
+    "RII": 35,
+    "W": 70
+  },
+  "external_reference_counts_by_act": {
+    "B": 25,
+    "E": 19,
+    "G": 11,
+    "RI": 26,
+    "RII": 10,
+    "W": 15
+  },
+  "xref_spot_check_sample": [
+    {
+      "source_unit_id": "B Rec. 40",
+      "target_unit_id": "B Art. 3",
+      "target_unit_id_normalized": "B Art. 3",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 3"
+    },
+    {
+      "source_unit_id": "B Rec. 41",
+      "target_unit_id": "B Art. 3",
+      "target_unit_id_normalized": "B Art. 3",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 3"
+    },
+    {
+      "source_unit_id": "B Art. 5",
+      "target_unit_id": "B Art. 76",
+      "target_unit_id_normalized": "B Art. 76",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 76"
+    },
+    {
+      "source_unit_id": "B Art. 5.2",
+      "target_unit_id": "B Art. 76",
+      "target_unit_id_normalized": "B Art. 76",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 76"
+    },
+    {
+      "source_unit_id": "B Art. 6",
+      "target_unit_id": "B Art. 1",
+      "target_unit_id_normalized": "B Art. 1",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 1"
+    },
+    {
+      "source_unit_id": "B Art. 6",
+      "target_unit_id": "B Art. 2",
+      "target_unit_id_normalized": "B Art. 2",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 2"
+    },
+    {
+      "source_unit_id": "B Art. 6",
+      "target_unit_id": "B Art. 24",
+      "target_unit_id_normalized": "B Art. 24",
+      "document_code": "B",
+      "reference_kind": "list_expanded",
+      "raw_match": "Articles 24 and 25"
+    },
+    {
+      "source_unit_id": "B Art. 6",
+      "target_unit_id": "B Art. 25",
+      "target_unit_id_normalized": "B Art. 25",
+      "document_code": "B",
+      "reference_kind": "list_expanded",
+      "raw_match": "Articles 24 and 25"
+    },
+    {
+      "source_unit_id": "B Art. 6",
+      "target_unit_id": "B Art. 76",
+      "target_unit_id_normalized": "B Art. 76",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 76"
+    },
+    {
+      "source_unit_id": "B Art. 6.1",
+      "target_unit_id": "B Art. 1",
+      "target_unit_id_normalized": "B Art. 1",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 1"
+    },
+    {
+      "source_unit_id": "B Art. 6.1",
+      "target_unit_id": "B Art. 2",
+      "target_unit_id_normalized": "B Art. 2",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 2"
+    },
+    {
+      "source_unit_id": "B Art. 6.1",
+      "target_unit_id": "B Art. 24",
+      "target_unit_id_normalized": "B Art. 24",
+      "document_code": "B",
+      "reference_kind": "list_expanded",
+      "raw_match": "Articles 24 and 25"
+    },
+    {
+      "source_unit_id": "B Art. 6.1",
+      "target_unit_id": "B Art. 25",
+      "target_unit_id_normalized": "B Art. 25",
+      "document_code": "B",
+      "reference_kind": "list_expanded",
+      "raw_match": "Articles 24 and 25"
+    },
+    {
+      "source_unit_id": "B Art. 6.2",
+      "target_unit_id": "B Art. 76",
+      "target_unit_id_normalized": "B Art. 76",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 76"
+    },
+    {
+      "source_unit_id": "B Art. 10",
+      "target_unit_id": "B Art. 6",
+      "target_unit_id_normalized": "B Art. 6",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 6"
+    },
+    {
+      "source_unit_id": "B Art. 10",
+      "target_unit_id": "B Art. 7",
+      "target_unit_id_normalized": "B Art. 7",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 7"
+    },
+    {
+      "source_unit_id": "B Art. 10.1",
+      "target_unit_id": "B Art. 6",
+      "target_unit_id_normalized": "B Art. 6",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 6"
+    },
+    {
+      "source_unit_id": "B Art. 10.1",
+      "target_unit_id": "B Art. 7",
+      "target_unit_id_normalized": "B Art. 7",
+      "document_code": "B",
+      "reference_kind": "single",
+      "raw_match": "Article 7"
+    },
+    {
+      "source_unit_id": "B Art. 13",
+      "target_unit_id": "B Art. 10",
+      "target_unit_id_normalized": "B Art. 10",
+      "document_code": "B",
+      "reference_kind": "list_expanded",
+      "raw_match": "Articles 10, 11 and 12"
+    },
+    {
+      "source_unit_id": "B Art. 13",
+      "target_unit_id": "B Art. 11",
+      "target_unit_id_normalized": "B Art. 11",
+      "document_code": "B",
+      "reference_kind": "list_expanded",
+      "raw_match": "Articles 10, 11 and 12"
+    }
+  ]
+}

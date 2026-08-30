@@ -1,0 +1,37 @@
+audit_id,manual_judge_score_reasonable,manual_faithfulness_score,manual_correctness_score,manual_unsupported_claims_missed,manual_abstention_handled_correctly,manual_notes,reviewer_id
+audit_001,Yes,1,1,No,Not applicable,,01
+audit_002,Yes,1,1,No,Not applicable,,01
+audit_003,Yes,1,1,No,Not applicable,,01
+audit_004,Yes,1,1,No,Not applicable,,01
+audit_005,Yes,1,1,No,Not applicable,,01
+audit_006,Yes,1,1,No,Not applicable,,01
+audit_007,Yes,1,0.6,No,Not applicable,,01
+audit_008,No,1,0.5,No,No,"The answer is overly cautious and incomplete, but it accurately reports the retrieved passages; zero correctness is too severe.",01
+audit_009,Yes,1,1,No,Yes,,01
+audit_010,Yes,1,1,No,Not applicable,,01
+audit_011,Yes,1,1,No,Not applicable,,01
+audit_012,No,0.9,0.7,No,Not applicable,The faithfulness penalty is too large for two minor wording issues.,01
+audit_013,No,1,0.2,No,Yes,"Faithfulness was penalized for missing content, although the answer made no unsupported claim.",01
+audit_014,Yes,1,0.8,No,Not applicable,,01
+audit_015,Yes,1,0.8,No,Yes,,01
+audit_016,Yes,1,1,No,Not applicable,,01
+audit_017,No,1,1,No,Not applicable,"The correctness penalty treats relevant, correct Article 20 detail as unsupported.",01
+audit_018,Yes,1,1,No,Not applicable,,01
+audit_019,No,1,0.8,No,Not applicable,"The answer is incomplete and overgeneralized, but a zero correctness score is too severe.",01
+audit_020,Yes,1,1,No,Not applicable,,01
+audit_021,Yes,1,1,No,Not applicable,,01
+audit_022,Yes,1,1,No,Not applicable,,01
+audit_023,Yes,1,1,No,Not applicable,,01
+audit_024,No,1,1,No,Not applicable,The context supports pseudonym use in signature validation; both automatic scores are too low.,01
+audit_025,No,1,0.7,No,Not applicable,"The correctness score is too low; the answer states valid consent conditions, though it does not distinguish explicit consent well.",01
+audit_026,Yes,1,1,No,Not applicable,,01
+audit_027,Yes,1,0.9,No,Not applicable,,01
+audit_028,Yes,1,1,No,Not applicable,,01
+audit_029,Yes,1,1,No,Not applicable,,01
+audit_030,Yes,0.9,1,No,Not applicable,,01
+audit_031,Yes,1,1,No,Not applicable,,01
+audit_032,Yes,1,1,No,Not applicable,,01
+audit_033,Yes,1,1,No,Not applicable,,01
+audit_034,Yes,1,1,No,Not applicable,,01
+audit_035,No,1,0.8,No,Not applicable,"The second point is irrelevant, but it is supported by the retrieved passage; the faithfulness penalty is too large.",01
+audit_036,No,1,0.7,No,Not applicable,"Faithfulness was penalized for omission and focus, not for unsupported claims.",01

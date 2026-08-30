@@ -1,0 +1,292 @@
+{
+  "status": "pending_manual_review",
+  "created_at_utc": "2026-07-18T21:08:34.887624+00:00",
+  "input_record_count": 360,
+  "input_paths": {
+    "answer_evaluation_records": "data/evaluation/generated_answer_evaluation.json",
+    "answers_dir": "data/generation",
+    "faithfulness_scores": "data/evaluation/faithfulness_scores.json",
+    "correctness_scores": "data/evaluation/correctness_scores.json"
+  },
+  "sample_fraction": 0.1,
+  "target_sample_size": 36,
+  "sampled_record_count": 36,
+  "random_seed": 42,
+  "faithfulness_bands": [
+    {
+      "id": "low",
+      "lower": 0.0,
+      "upper": 0.5
+    },
+    {
+      "id": "mid",
+      "lower": 0.5,
+      "upper": 0.8
+    },
+    {
+      "id": "high",
+      "lower": 0.8,
+      "upper": 1.000000001
+    }
+  ],
+  "stratum_counts": {
+    "combined|high": 72,
+    "no_enrichment|high": 64,
+    "no_enrichment|mid": 8,
+    "parent_only|high": 71,
+    "parent_only|mid": 1,
+    "volume_matched|high": 69,
+    "volume_matched|mid": 3,
+    "xref_only|high": 68,
+    "xref_only|low": 2,
+    "xref_only|mid": 2
+  },
+  "stratum_sample_counts": {
+    "combined|high": 7,
+    "no_enrichment|high": 6,
+    "no_enrichment|mid": 2,
+    "parent_only|high": 6,
+    "parent_only|mid": 1,
+    "volume_matched|high": 6,
+    "volume_matched|mid": 1,
+    "xref_only|high": 5,
+    "xref_only|low": 1,
+    "xref_only|mid": 1
+  },
+  "condition_sample_targets": {
+    "combined": 7,
+    "no_enrichment": 8,
+    "parent_only": 7,
+    "volume_matched": 7,
+    "xref_only": 7
+  },
+  "manual_columns": [
+    "manual_judge_score_reasonable",
+    "manual_faithfulness_score",
+    "manual_correctness_score",
+    "manual_unsupported_claims_missed",
+    "manual_abstention_handled_correctly",
+    "manual_notes",
+    "reviewer_id",
+    "reviewed_at_utc"
+  ],
+  "completion_rule": "Complete all manual_* columns, reviewer_id, and reviewed_at_utc before using this audit as evidence for LLM-judge validity.",
+  "selected_records": [
+    {
+      "audit_id": "audit_001",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_004"
+    },
+    {
+      "audit_id": "audit_002",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_014"
+    },
+    {
+      "audit_id": "audit_003",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_015"
+    },
+    {
+      "audit_id": "audit_004",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_018"
+    },
+    {
+      "audit_id": "audit_005",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_029"
+    },
+    {
+      "audit_id": "audit_006",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_032"
+    },
+    {
+      "audit_id": "audit_007",
+      "condition_id": "combined",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_036"
+    },
+    {
+      "audit_id": "audit_008",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_002"
+    },
+    {
+      "audit_id": "audit_009",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_003"
+    },
+    {
+      "audit_id": "audit_010",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_006"
+    },
+    {
+      "audit_id": "audit_011",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_013"
+    },
+    {
+      "audit_id": "audit_012",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "mid",
+      "query_id": "q4eu_024"
+    },
+    {
+      "audit_id": "audit_013",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "mid",
+      "query_id": "q4eu_029"
+    },
+    {
+      "audit_id": "audit_014",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_032"
+    },
+    {
+      "audit_id": "audit_015",
+      "condition_id": "no_enrichment",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_044"
+    },
+    {
+      "audit_id": "audit_016",
+      "condition_id": "parent_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_004"
+    },
+    {
+      "audit_id": "audit_017",
+      "condition_id": "parent_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_026"
+    },
+    {
+      "audit_id": "audit_018",
+      "condition_id": "parent_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_029"
+    },
+    {
+      "audit_id": "audit_019",
+      "condition_id": "parent_only",
+      "faithfulness_band": "mid",
+      "query_id": "q4eu_034"
+    },
+    {
+      "audit_id": "audit_020",
+      "condition_id": "parent_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_055"
+    },
+    {
+      "audit_id": "audit_021",
+      "condition_id": "parent_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_059"
+    },
+    {
+      "audit_id": "audit_022",
+      "condition_id": "parent_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_066"
+    },
+    {
+      "audit_id": "audit_023",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_001"
+    },
+    {
+      "audit_id": "audit_024",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "mid",
+      "query_id": "q4eu_002"
+    },
+    {
+      "audit_id": "audit_025",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_022"
+    },
+    {
+      "audit_id": "audit_026",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_023"
+    },
+    {
+      "audit_id": "audit_027",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_038"
+    },
+    {
+      "audit_id": "audit_028",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_046"
+    },
+    {
+      "audit_id": "audit_029",
+      "condition_id": "volume_matched",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_057"
+    },
+    {
+      "audit_id": "audit_030",
+      "condition_id": "xref_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_012"
+    },
+    {
+      "audit_id": "audit_031",
+      "condition_id": "xref_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_013"
+    },
+    {
+      "audit_id": "audit_032",
+      "condition_id": "xref_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_014"
+    },
+    {
+      "audit_id": "audit_033",
+      "condition_id": "xref_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_044"
+    },
+    {
+      "audit_id": "audit_034",
+      "condition_id": "xref_only",
+      "faithfulness_band": "high",
+      "query_id": "q4eu_049"
+    },
+    {
+      "audit_id": "audit_035",
+      "condition_id": "xref_only",
+      "faithfulness_band": "mid",
+      "query_id": "q4eu_067"
+    },
+    {
+      "audit_id": "audit_036",
+      "condition_id": "xref_only",
+      "faithfulness_band": "low",
+      "query_id": "q4eu_070"
+    }
+  ]
+}

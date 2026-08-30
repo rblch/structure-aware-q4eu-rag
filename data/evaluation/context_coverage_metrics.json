@@ -1,0 +1,739 @@
+{
+  "base_config_id": "hier_paragraph",
+  "search_scope": "all_acts",
+  "base_top_k": 5,
+  "context_budget_tokens": 3500,
+  "record_count": 360,
+  "conditions": {
+    "combined": {
+      "query_count": 72,
+      "macro": {
+        "context_gold_recall": 0.6088383838383838,
+        "context_gold_precision": 0.330109126984127,
+        "context_gold_f1": 0.394415499623833,
+        "context_token_count": 1745.5972222222222,
+        "included_chunk_count": 8.51388888888889,
+        "excluded_chunk_count": 0.125,
+        "candidate_chunk_count": 8.63888888888889
+      },
+      "context_token_count": {
+        "min": 454.0,
+        "median": 1578.5,
+        "p95": 3272.9000000000005,
+        "max": 3463.0
+      },
+      "included_chunk_count": {
+        "min": 5.0,
+        "median": 9.0,
+        "p95": 11.0,
+        "max": 13.0
+      },
+      "assembly_seconds": {
+        "min": 0.00024220799969043583,
+        "median": 0.0009222289991157595,
+        "p95": 0.0027835584482090794,
+        "max": 0.006078582999180071
+      },
+      "by_specificity": {
+        "H": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.7810606060606061,
+            "context_gold_precision": 0.2933982683982684,
+            "context_gold_f1": 0.4014856355765447,
+            "context_token_count": 1864.8636363636363,
+            "included_chunk_count": 8.863636363636363,
+            "excluded_chunk_count": 0.2727272727272727,
+            "candidate_chunk_count": 9.136363636363637
+          }
+        },
+        "L": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.39621212121212124,
+            "context_gold_precision": 0.3321969696969697,
+            "context_gold_f1": 0.33968947718947723,
+            "context_token_count": 1533.409090909091,
+            "included_chunk_count": 8.0,
+            "excluded_chunk_count": 0.09090909090909091,
+            "candidate_chunk_count": 8.090909090909092
+          }
+        },
+        "N": {
+          "query_count": 28,
+          "macro": {
+            "context_gold_recall": 0.6405844155844156,
+            "context_gold_precision": 0.357312925170068,
+            "context_gold_f1": 0.431859410430839,
+            "context_token_count": 1818.607142857143,
+            "included_chunk_count": 8.642857142857142,
+            "excluded_chunk_count": 0.03571428571428571,
+            "candidate_chunk_count": 8.678571428571429
+          }
+        }
+      },
+      "by_target_document": {
+        "B": {
+          "query_count": 10,
+          "macro": {
+            "context_gold_recall": 0.545,
+            "context_gold_precision": 0.3373809523809524,
+            "context_gold_f1": 0.4091269841269842,
+            "context_token_count": 1903.5,
+            "included_chunk_count": 9.3,
+            "excluded_chunk_count": 0.3,
+            "candidate_chunk_count": 9.6
+          }
+        },
+        "E": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.7000000000000001,
+            "context_gold_precision": 0.30049019607843136,
+            "context_gold_f1": 0.4034080298786181,
+            "context_token_count": 1551.4117647058824,
+            "included_chunk_count": 8.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 8.0
+          }
+        },
+        "G": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.6686274509803922,
+            "context_gold_precision": 0.3089635854341737,
+            "context_gold_f1": 0.3861519199754494,
+            "context_token_count": 2058.176470588235,
+            "included_chunk_count": 7.9411764705882355,
+            "excluded_chunk_count": 0.35294117647058826,
+            "candidate_chunk_count": 8.294117647058824
+          }
+        },
+        "RI": {
+          "query_count": 7,
+          "macro": {
+            "context_gold_recall": 0.5452380952380953,
+            "context_gold_precision": 0.3416666666666667,
+            "context_gold_f1": 0.40952380952380957,
+            "context_token_count": 1483.5714285714287,
+            "included_chunk_count": 7.714285714285714,
+            "excluded_chunk_count": 0.2857142857142857,
+            "candidate_chunk_count": 8.0
+          }
+        },
+        "RII": {
+          "query_count": 3,
+          "macro": {
+            "context_gold_recall": 0.351010101010101,
+            "context_gold_precision": 0.4083333333333334,
+            "context_gold_f1": 0.32169312169312164,
+            "context_token_count": 2092.3333333333335,
+            "included_chunk_count": 9.666666666666666,
+            "excluded_chunk_count": 0.6666666666666666,
+            "candidate_chunk_count": 10.333333333333334
+          }
+        },
+        "W": {
+          "query_count": 21,
+          "macro": {
+            "context_gold_recall": 0.5515873015873016,
+            "context_gold_precision": 0.3365079365079365,
+            "context_gold_f1": 0.37664399092970524,
+            "context_token_count": 1726.952380952381,
+            "included_chunk_count": 9.333333333333334,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 9.333333333333334
+          }
+        }
+      }
+    },
+    "no_enrichment": {
+      "query_count": 72,
+      "macro": {
+        "context_gold_recall": 0.5903198653198652,
+        "context_gold_precision": 0.3701388888888889,
+        "context_gold_f1": 0.41923762965429634,
+        "context_token_count": 638.5555555555555,
+        "included_chunk_count": 5.0,
+        "excluded_chunk_count": 0.0,
+        "candidate_chunk_count": 5.0
+      },
+      "context_token_count": {
+        "min": 281.0,
+        "median": 544.5,
+        "p95": 1135.8500000000004,
+        "max": 1392.0
+      },
+      "included_chunk_count": {
+        "min": 5.0,
+        "median": 5.0,
+        "p95": 5.0,
+        "max": 5.0
+      },
+      "assembly_seconds": {
+        "min": 0.00014520799595629796,
+        "median": 0.0002533335027692374,
+        "p95": 0.0005593206493358594,
+        "max": 0.0006816670065745711
+      },
+      "by_specificity": {
+        "H": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.7810606060606061,
+            "context_gold_precision": 0.35454545454545455,
+            "context_gold_f1": 0.45461760461760464,
+            "context_token_count": 672.5,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "L": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.3734848484848485,
+            "context_gold_precision": 0.3606060606060606,
+            "context_gold_f1": 0.34582387309660034,
+            "context_token_count": 629.9545454545455,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "N": {
+          "query_count": 28,
+          "macro": {
+            "context_gold_recall": 0.6108225108225108,
+            "context_gold_precision": 0.3898809523809524,
+            "context_gold_f1": 0.4491213151927438,
+            "context_token_count": 618.6428571428571,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        }
+      },
+      "by_target_document": {
+        "B": {
+          "query_count": 10,
+          "macro": {
+            "context_gold_recall": 0.545,
+            "context_gold_precision": 0.425,
+            "context_gold_f1": 0.45826118326118326,
+            "context_token_count": 694.6,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "E": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.7000000000000001,
+            "context_gold_precision": 0.3490196078431373,
+            "context_gold_f1": 0.45172735760971056,
+            "context_token_count": 566.9411764705883,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "G": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.6392156862745099,
+            "context_gold_precision": 0.3735294117647059,
+            "context_gold_f1": 0.4247500865147924,
+            "context_token_count": 955.9411764705883,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "RI": {
+          "query_count": 7,
+          "macro": {
+            "context_gold_recall": 0.47380952380952385,
+            "context_gold_precision": 0.33571428571428574,
+            "context_gold_f1": 0.37903525046382186,
+            "context_token_count": 591.1428571428571,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "RII": {
+          "query_count": 3,
+          "macro": {
+            "context_gold_recall": 0.351010101010101,
+            "context_gold_precision": 0.4666666666666666,
+            "context_gold_f1": 0.35690235690235683,
+            "context_token_count": 613.6666666666666,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        },
+        "W": {
+          "query_count": 21,
+          "macro": {
+            "context_gold_recall": 0.5357142857142857,
+            "context_gold_precision": 0.3412698412698413,
+            "context_gold_f1": 0.376832955404384,
+            "context_token_count": 436.9047619047619,
+            "included_chunk_count": 5.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.0
+          }
+        }
+      }
+    },
+    "parent_only": {
+      "query_count": 72,
+      "macro": {
+        "context_gold_recall": 0.5903198653198652,
+        "context_gold_precision": 0.3701388888888889,
+        "context_gold_f1": 0.41923762965429634,
+        "context_token_count": 1478.513888888889,
+        "included_chunk_count": 7.694444444444445,
+        "excluded_chunk_count": 0.0,
+        "candidate_chunk_count": 7.694444444444445
+      },
+      "context_token_count": {
+        "min": 454.0,
+        "median": 1423.0,
+        "p95": 2462.2,
+        "max": 2930.0
+      },
+      "included_chunk_count": {
+        "min": 5.0,
+        "median": 8.0,
+        "p95": 10.0,
+        "max": 10.0
+      },
+      "assembly_seconds": {
+        "min": 0.00025116599863395095,
+        "median": 0.0007955830005812459,
+        "p95": 0.0013942145469627576,
+        "max": 0.0017687079962342978
+      },
+      "by_specificity": {
+        "H": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.7810606060606061,
+            "context_gold_precision": 0.35454545454545455,
+            "context_gold_f1": 0.45461760461760464,
+            "context_token_count": 1595.7727272727273,
+            "included_chunk_count": 8.0,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 8.0
+          }
+        },
+        "L": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.3734848484848485,
+            "context_gold_precision": 0.3606060606060606,
+            "context_gold_f1": 0.34582387309660034,
+            "context_token_count": 1364.090909090909,
+            "included_chunk_count": 7.318181818181818,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 7.318181818181818
+          }
+        },
+        "N": {
+          "query_count": 28,
+          "macro": {
+            "context_gold_recall": 0.6108225108225108,
+            "context_gold_precision": 0.3898809523809524,
+            "context_gold_f1": 0.4491213151927438,
+            "context_token_count": 1476.2857142857142,
+            "included_chunk_count": 7.75,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 7.75
+          }
+        }
+      },
+      "by_target_document": {
+        "B": {
+          "query_count": 10,
+          "macro": {
+            "context_gold_recall": 0.545,
+            "context_gold_precision": 0.425,
+            "context_gold_f1": 0.45826118326118326,
+            "context_token_count": 1423.3,
+            "included_chunk_count": 7.9,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 7.9
+          }
+        },
+        "E": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.7000000000000001,
+            "context_gold_precision": 0.3490196078431373,
+            "context_gold_f1": 0.45172735760971056,
+            "context_token_count": 1337.4705882352941,
+            "included_chunk_count": 7.294117647058823,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 7.294117647058823
+          }
+        },
+        "G": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.6392156862745099,
+            "context_gold_precision": 0.3735294117647059,
+            "context_gold_f1": 0.4247500865147924,
+            "context_token_count": 1628.5882352941176,
+            "included_chunk_count": 6.588235294117647,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 6.588235294117647
+          }
+        },
+        "RI": {
+          "query_count": 7,
+          "macro": {
+            "context_gold_recall": 0.47380952380952385,
+            "context_gold_precision": 0.33571428571428574,
+            "context_gold_f1": 0.37903525046382186,
+            "context_token_count": 1215.0,
+            "included_chunk_count": 6.857142857142857,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 6.857142857142857
+          }
+        },
+        "RII": {
+          "query_count": 3,
+          "macro": {
+            "context_gold_recall": 0.351010101010101,
+            "context_gold_precision": 0.4666666666666666,
+            "context_gold_f1": 0.35690235690235683,
+            "context_token_count": 1693.3333333333333,
+            "included_chunk_count": 8.333333333333334,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 8.333333333333334
+          }
+        },
+        "W": {
+          "query_count": 21,
+          "macro": {
+            "context_gold_recall": 0.5357142857142857,
+            "context_gold_precision": 0.3412698412698413,
+            "context_gold_f1": 0.376832955404384,
+            "context_token_count": 1610.142857142857,
+            "included_chunk_count": 9.047619047619047,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 9.047619047619047
+          }
+        }
+      }
+    },
+    "volume_matched": {
+      "query_count": 72,
+      "macro": {
+        "context_gold_recall": 0.6936026936026936,
+        "context_gold_precision": 0.20223229105516144,
+        "context_gold_f1": 0.2850094603020433,
+        "context_token_count": 1741.7916666666667,
+        "included_chunk_count": 14.23611111111111,
+        "excluded_chunk_count": 0.7638888888888888,
+        "candidate_chunk_count": 50.0
+      },
+      "context_token_count": {
+        "min": 489.0,
+        "median": 1608.5,
+        "p95": 3269.3,
+        "max": 3467.0
+      },
+      "included_chunk_count": {
+        "min": 5.0,
+        "median": 13.0,
+        "p95": 25.450000000000003,
+        "max": 33.0
+      },
+      "assembly_seconds": {
+        "min": 0.00025425000058021396,
+        "median": 0.0018824169965228066,
+        "p95": 0.0076103161482024015,
+        "max": 0.015121916003408842
+      },
+      "by_specificity": {
+        "H": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.8416666666666667,
+            "context_gold_precision": 0.1661729239269346,
+            "context_gold_f1": 0.2607626569102786,
+            "context_token_count": 1867.3181818181818,
+            "included_chunk_count": 14.863636363636363,
+            "excluded_chunk_count": 1.1363636363636365,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "L": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.5037878787878788,
+            "context_gold_precision": 0.24510809947091594,
+            "context_gold_f1": 0.3010873492479615,
+            "context_token_count": 1539.4545454545455,
+            "included_chunk_count": 12.863636363636363,
+            "excluded_chunk_count": 0.5909090909090909,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "N": {
+          "query_count": 28,
+          "macro": {
+            "context_gold_recall": 0.7264069264069264,
+            "context_gold_precision": 0.19687651575781828,
+            "context_gold_f1": 0.2914278930809227,
+            "context_token_count": 1802.142857142857,
+            "included_chunk_count": 14.821428571428571,
+            "excluded_chunk_count": 0.6071428571428571,
+            "candidate_chunk_count": 50.0
+          }
+        }
+      },
+      "by_target_document": {
+        "B": {
+          "query_count": 10,
+          "macro": {
+            "context_gold_recall": 0.6233333333333333,
+            "context_gold_precision": 0.20762140033879165,
+            "context_gold_f1": 0.3080360660714563,
+            "context_token_count": 1884.0,
+            "included_chunk_count": 13.5,
+            "excluded_chunk_count": 0.8,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "E": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.7705882352941176,
+            "context_gold_precision": 0.17235628654313775,
+            "context_gold_f1": 0.2672781224320106,
+            "context_token_count": 1549.764705882353,
+            "included_chunk_count": 13.882352941176471,
+            "excluded_chunk_count": 0.29411764705882354,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "G": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.6784313725490196,
+            "context_gold_precision": 0.2316261353026059,
+            "context_gold_f1": 0.3028681546301288,
+            "context_token_count": 2065.235294117647,
+            "included_chunk_count": 10.882352941176471,
+            "excluded_chunk_count": 1.6470588235294117,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "RI": {
+          "query_count": 7,
+          "macro": {
+            "context_gold_recall": 0.6285714285714287,
+            "context_gold_precision": 0.22384895987380457,
+            "context_gold_f1": 0.32131211700177215,
+            "context_token_count": 1457.857142857143,
+            "included_chunk_count": 11.285714285714286,
+            "excluded_chunk_count": 1.1428571428571428,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "RII": {
+          "query_count": 3,
+          "macro": {
+            "context_gold_recall": 0.5075757575757576,
+            "context_gold_precision": 0.350296442687747,
+            "context_gold_f1": 0.3568443051201671,
+            "context_token_count": 2105.3333333333335,
+            "included_chunk_count": 14.666666666666666,
+            "excluded_chunk_count": 1.0,
+            "candidate_chunk_count": 50.0
+          }
+        },
+        "W": {
+          "query_count": 21,
+          "macro": {
+            "context_gold_recall": 0.7214285714285714,
+            "context_gold_precision": 0.16883626595037476,
+            "context_gold_f1": 0.25173112307123807,
+            "context_token_count": 1726.2380952380952,
+            "included_chunk_count": 19.095238095238095,
+            "excluded_chunk_count": 0.47619047619047616,
+            "candidate_chunk_count": 50.0
+          }
+        }
+      }
+    },
+    "xref_only": {
+      "query_count": 72,
+      "macro": {
+        "context_gold_recall": 0.6088383838383838,
+        "context_gold_precision": 0.3290895061728395,
+        "context_gold_f1": 0.39329848392348393,
+        "context_token_count": 1011.0555555555555,
+        "included_chunk_count": 6.041666666666667,
+        "excluded_chunk_count": 0.09722222222222222,
+        "candidate_chunk_count": 6.138888888888889
+      },
+      "context_token_count": {
+        "min": 319.0,
+        "median": 803.0,
+        "p95": 2617.55,
+        "max": 3498.0
+      },
+      "included_chunk_count": {
+        "min": 5.0,
+        "median": 5.0,
+        "p95": 9.450000000000003,
+        "max": 12.0
+      },
+      "assembly_seconds": {
+        "min": 0.00015050000365590677,
+        "median": 0.0003686875024868641,
+        "p95": 0.0017776728000171728,
+        "max": 0.00596945799770765
+      },
+      "by_specificity": {
+        "H": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.7810606060606061,
+            "context_gold_precision": 0.2913239538239538,
+            "context_gold_f1": 0.3988455988455989,
+            "context_token_count": 1068.8636363636363,
+            "included_chunk_count": 6.136363636363637,
+            "excluded_chunk_count": 0.22727272727272727,
+            "candidate_chunk_count": 6.363636363636363
+          }
+        },
+        "L": {
+          "query_count": 22,
+          "macro": {
+            "context_gold_recall": 0.39621212121212124,
+            "context_gold_precision": 0.33156565656565656,
+            "context_gold_f1": 0.3392565767565768,
+            "context_token_count": 918.6818181818181,
+            "included_chunk_count": 5.909090909090909,
+            "excluded_chunk_count": 0.09090909090909091,
+            "candidate_chunk_count": 6.0
+          }
+        },
+        "N": {
+          "query_count": 28,
+          "macro": {
+            "context_gold_recall": 0.6405844155844156,
+            "context_gold_precision": 0.3568168934240363,
+            "context_gold_f1": 0.4314015349729635,
+            "context_token_count": 1038.2142857142858,
+            "included_chunk_count": 6.071428571428571,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 6.071428571428571
+          }
+        }
+      },
+      "by_target_document": {
+        "B": {
+          "query_count": 10,
+          "macro": {
+            "context_gold_recall": 0.545,
+            "context_gold_precision": 0.3346031746031746,
+            "context_gold_f1": 0.40689255189255197,
+            "context_token_count": 1427.4,
+            "included_chunk_count": 6.7,
+            "excluded_chunk_count": 0.2,
+            "candidate_chunk_count": 6.9
+          }
+        },
+        "E": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.7000000000000001,
+            "context_gold_precision": 0.30049019607843136,
+            "context_gold_f1": 0.4034080298786181,
+            "context_token_count": 821.3529411764706,
+            "included_chunk_count": 5.882352941176471,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.882352941176471
+          }
+        },
+        "G": {
+          "query_count": 17,
+          "macro": {
+            "context_gold_recall": 0.6686274509803922,
+            "context_gold_precision": 0.30627917833800183,
+            "context_gold_f1": 0.38273540185304894,
+            "context_token_count": 1558.5294117647059,
+            "included_chunk_count": 6.705882352941177,
+            "excluded_chunk_count": 0.29411764705882354,
+            "candidate_chunk_count": 7.0
+          }
+        },
+        "RI": {
+          "query_count": 7,
+          "macro": {
+            "context_gold_recall": 0.5452380952380953,
+            "context_gold_precision": 0.3396825396825397,
+            "context_gold_f1": 0.4081632653061225,
+            "context_token_count": 1148.857142857143,
+            "included_chunk_count": 6.428571428571429,
+            "excluded_chunk_count": 0.2857142857142857,
+            "candidate_chunk_count": 6.714285714285714
+          }
+        },
+        "RII": {
+          "query_count": 3,
+          "macro": {
+            "context_gold_recall": 0.351010101010101,
+            "context_gold_precision": 0.4037037037037037,
+            "context_gold_f1": 0.3185185185185185,
+            "context_token_count": 1529.6666666666667,
+            "included_chunk_count": 7.0,
+            "excluded_chunk_count": 0.6666666666666666,
+            "candidate_chunk_count": 7.666666666666667
+          }
+        },
+        "W": {
+          "query_count": 21,
+          "macro": {
+            "context_gold_recall": 0.5515873015873016,
+            "context_gold_precision": 0.3365079365079365,
+            "context_gold_f1": 0.37664399092970524,
+            "context_token_count": 599.5238095238095,
+            "included_chunk_count": 5.380952380952381,
+            "excluded_chunk_count": 0.0,
+            "candidate_chunk_count": 5.380952380952381
+          }
+        }
+      }
+    }
+  },
+  "volume_match": {
+    "tolerance": 0.15,
+    "query_count": 72,
+    "outside_tolerance_count": 0,
+    "outside_tolerance_proportion": 0.0,
+    "max_relative_error": 0.14094775212636695,
+    "mean_relative_error": 0.02596080345993453,
+    "median_relative_error": 0.01467948558973384,
+    "p95_relative_error": 0.09920605679367364,
+    "outside_tolerance_queries": []
+  },
+  "budget_derivation": {
+    "basis": "uncapped combined context token sizes over all queries",
+    "query_count": 72,
+    "p95_raw": 3368.300000000001,
+    "rounding": "nearest_500",
+    "derived_budget": 3500,
+    "configured_budget": 3500,
+    "matches_configured_budget": true
+  }
+}

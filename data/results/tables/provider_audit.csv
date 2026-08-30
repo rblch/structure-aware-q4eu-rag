@@ -1,0 +1,21 @@
+condition_id,role,provider,call_count
+combined,correctness_judge,Google,72
+combined,faithfulness_judge,Amazon Bedrock,72
+combined,generation,Azure,6
+combined,generation,OpenAI,66
+no_enrichment,correctness_judge,Google,72
+no_enrichment,faithfulness_judge,Amazon Bedrock,72
+no_enrichment,generation,Azure,9
+no_enrichment,generation,OpenAI,63
+parent_only,correctness_judge,Google,72
+parent_only,faithfulness_judge,Amazon Bedrock,72
+parent_only,generation,Azure,12
+parent_only,generation,OpenAI,60
+volume_matched,correctness_judge,Google,72
+volume_matched,faithfulness_judge,Amazon Bedrock,72
+volume_matched,generation,Azure,15
+volume_matched,generation,OpenAI,57
+xref_only,correctness_judge,Google,72
+xref_only,faithfulness_judge,Amazon Bedrock,72
+xref_only,generation,Azure,11
+xref_only,generation,OpenAI,61
